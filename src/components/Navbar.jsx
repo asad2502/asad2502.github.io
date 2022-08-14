@@ -45,43 +45,43 @@ const Navigation = React.forwardRef((props, ref) => {
       <Navbar.Toggle aria-controls="basic-navbar-nav" className="toggler" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="mr-auto">
-          {/* {
-            <Nav.Link className="nav-link lead">
-              <Link to={process.env.PUBLIC_URL + "/blog"}>Blog</Link>
-            </Nav.Link>
-          } */}
-          {repos.show && (
+            {/* {
+                <Nav.Link className="nav-link lead">
+                <Link to={process.env.PUBLIC_URL + "/blog"}>Blog</Link>
+                </Nav.Link>
+            } */}
+            {about.show && (
+                <Nav.Link
+                className="nav-link lead"
+                href={process.env.PUBLIC_URL + "/#aboutme"}
+                >
+                About
+                </Nav.Link>
+            )}
+            {repos.show && (
+                <Nav.Link
+                className="nav-link lead"
+                href={process.env.PUBLIC_URL + "/#projects"}
+                >
+                Projects
+                </Nav.Link>
+            )}
             <Nav.Link
-              className="nav-link lead"
-              href={process.env.PUBLIC_URL + "/#projects"}
+                className="nav-link lead"
+                href={about.resume}
+                target="_blank"
+                rel="noreferrer noopener"
             >
-              Projects
+                Resume
             </Nav.Link>
-          )}
-          <Nav.Link
-            className="nav-link lead"
-            href={about.resume}
-            target="_blank"
-            rel="noreferrer noopener"
-          >
-            Resume
-          </Nav.Link>
-          {about.show && (
-            <Nav.Link
-              className="nav-link lead"
-              href={process.env.PUBLIC_URL + "/#aboutme"}
-            >
-              About
-            </Nav.Link>
-          )}
-          {skills.show && (
-            <Nav.Link
-              className="nav-link lead"
-              href={process.env.PUBLIC_URL + "/#skills"}
-            >
-              Skills
-            </Nav.Link>
-          )}
+            {/* {skills.show && (
+                <Nav.Link
+                className="nav-link lead"
+                href={process.env.PUBLIC_URL + "/#skills"}
+                >
+                Skills
+                </Nav.Link>
+            )} */}
         </Nav>
       </Navbar.Collapse>
     </Navbar>
