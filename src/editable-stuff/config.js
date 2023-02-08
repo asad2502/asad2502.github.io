@@ -54,8 +54,8 @@ const repos = {
   show: true,
   heading: "Recent Projects",
   gitHubUsername: "modernoctave", //i.e."johnDoe12Gh"
-  reposLength: 4,
-  specificRepos: [],
+  reposLength: 1,
+  specificRepos: ["InterIIT22-Algorithm", "PiBot-Slam", "NN-From-Scratch"],
 };
 
 // Leadership SECTION
