@@ -39,7 +39,7 @@ const mainBody = {
 const about = {
   show: true,
   heading: "About Me",
-  imageLink: "om.s.patil",
+  // imageLink: "",
   imageSize: 375,
   message: "Hi, my name is Om Patil, and I'm a computer science major at the Indian Institute of Technology, Dharwad. I'm a Linux enthusiast and strongly believe in open source. My current interests are in applied machine learning and robotics. In my free time, I enjoy movies, gardening and cooking!",
   resume: require("../editable-stuff/resume.pdf"),
@@ -52,10 +52,11 @@ const about = {
 //      i.e ["repository-1", "repo-2"]
 const repos = {
   show: true,
-  heading: "Recent Projects",
+  heading: "Projects",
   gitHubUsername: "modernoctave", //i.e."johnDoe12Gh"
-  reposLength: 1,
+  reposLength: 0,
   specificRepos: ["InterIIT22-Algorithm", "PiBot-Slam", "NN-From-Scratch"],
+  externRepos: ["IITDh-Robotics/Pluto-Drone-Swarm"]
 };
 
 // Leadership SECTION

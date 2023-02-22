@@ -12,12 +12,11 @@ const AboutMe = ({ heading, message, link, imgSize, resume }) => {
   const [showPic, setShowPic] = React.useState(Boolean(link));
 
   React.useEffect(() => {
-    // if (link && !pictureLinkRegex.test(link)) {
-    //   handleRequest();
-    // } else {
-    //   setProfilePicUrl(link);
-    // }
-    handleRequest();
+    if (link && !pictureLinkRegex.test(link)) {
+      handleRequest();
+    } else {
+      setProfilePicUrl(link);
+    }
   }, [link]);
 
   const handleRequest = async () => {
