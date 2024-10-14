@@ -1,0 +1,74 @@
+
+nav{
+    background-color: rgb(14, 116, 206);
+    font-size: 18px;
+    text-align: end;
+    margin-top: 1%;
+    margin-bottom: 3%;
+    padding-left: 5%;
+
+}
+
+/* asad_css.css */
+body {
+    background-color: #a4b1ec;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+    margin-top: 20px;
+}
+
+p {
+    color: #555;
+    line-height: 1.6;
+    margin: 10px 20px;
+}
+
+nav {
+    background-color: #00796b;
+    padding: 15px;
+    display: flex;
+    justify-content: right;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+section {
+    background-color: #fff;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+article {
+    background-color: #e0f7fa;
+    margin: 15px 0;
+    padding: 15px;
+    border-left: 6px solid #00796b;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
