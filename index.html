@@ -130,6 +130,8 @@
 <script>
     function change_bg_color(){
         document.querySelector(".asad11").style.color='blue';
+
+
     }
 
     function change_fontSize(){
@@ -139,16 +141,60 @@
 </script>
 
 
-<button onclick="change_bg_color()">change bacground color</button>
+<button onclick="change_bg_color()">change bacground color</button><br>
 
 
 
+<!-- how to create element after 5 seconds  -->
+<script >
+
+    function make_heading(){
+
+    let hhh = document.createElement('h3');
+    hhh.innerHTML = 'This heading is creating by click on button';
+    document.body.appendChild(hhh);
+
+    }
+</script>
+
+<button onclick="make_heading()">make a heading</button>
+
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat necessitatibus ipsa debitis perspiciatis sed consectetur aliquid delectus fuga tempore veritatis sunt vitae, cum nemo et error earum laboriosam impedit tenetur?</p>
+
+<!-- i want to see a buterfly image when i click on button -->
+<script>
+
+function image(){
+
+    let bbimg = document.createElement('img');
+    bbimg.src = "https://img.freepik.com/free-vector/yellow-beauty-butterfly-insect-icon_18591-82368.jpg";
+    document.body.appendChild(bbimg);
+    img.alt = 'image not loaded';
+}
+
+</script>
+
+<button onclick="image()">add an image</button>
+
+
+<h1 id ="umair">focused</h1>
+
+<script>
+
+
+function addclass(){
+document.getElementById("umair").classList.add('anything');    
+
+
+}
+
+
+</script>
 
 
 
-
-
-
+<button onclick="addclass()">make a weird red color</button>
 
 
 
