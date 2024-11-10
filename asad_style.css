@@ -1,100 +1,46 @@
-
-nav{
-    background-color: rgb(14, 116, 206);
-    font-size: 18px;
-    text-align: end;
-    margin-top: 1%;
-    margin-bottom: 3%;
-    padding-left: 5%;
-
-}
-
-/* asad_css.css */
-body {
-    font-family: Arial, sans-serif;
+/* Reset some default browser styling */
+* {
     margin: 0;
     padding: 0;
-}
-
-h1 {
-    color: #333;
-    text-align: center;
-    margin-top: 20px;
-}
-
-p {
-    color: #555;
-    line-height: 1.6;
-    margin: 10px 20px;
-}
-
-nav {
-    background-color: #00796b;
-    padding: 15px;
-    display: flex;
-    justify-content: right;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 15px;
-    font-size: 18px;
-}
-
-nav a:hover {
-    text-decoration: underline;
-}
-
-section {
-    background-color: #fff;
-    margin: 20px;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-article {
-    background-color: #e0f7fa;
-    margin: 15px 0;
-    padding: 15px;
-    border-left: 6px solid #00796b;
-    border-radius: 5px;
-}
-
-footer {
-    background-color: #333;
-    color: white;
-    font-size: x-small;
-    font-style: italic;
-    text-align: center;
-    padding: 7px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-
-header {
-    padding: 60px;
-    text-align: center;
-    background: #1abc9c;
-    color: white;
-    font-size: 30px;
+    box-sizing: border-box;
   }
-
-
-.asad {
-    background-color: pink;
-}
-
-h1{
-    font-size: 99;
-    text-align: left;
-}
-
-
-
-
-.anything {
-    background-color: #cf2d2d;
-}
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Navbar Styling */
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #333;
+  }
+  
+  .navbar-logo img {
+    height: 40px; /* Adjust as needed */
+    width: auto;
+  }
+  
+  .navbar-links {
+    list-style-type: none;
+    display: flex;
+  }
+  
+  .navbar-links li {
+    margin: 0 15px;
+  }
+  
+  .navbar-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s;
+  }
+  
+  .navbar-links a:hover {
+    color: #ff6347; /* Change this to the color you like */
+  }
+  
+  
