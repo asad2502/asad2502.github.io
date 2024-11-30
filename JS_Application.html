@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+
+    <link rel="stylesheet" href="asad_style.css">
+<style>
+    button {
+        background-color: rgb(0, 0, 0);
+        border-radius: 10px;
+        padding: 4%;
+        color: white;
+        font-size: medium;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        margin: 2%;
+    }
+</style>
+
+
+
+</head>
+
+
+
+
+<body style="text-align: center; ">
+    
+
+    <nav class="navbar">
+        <div class="navbar-logo">
+          <a href="index.html"><img src="asad logo.png" alt="Logo" /></a> 
+        </div>
+        <ul class="navbar-links">
+          <li><a href="JS_Application.html">JS Application</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+        </ul>
+      </nav>
+<img id="fan" src="fan.png" alt=""><br>
+
+<button onclick="turnon()">TURN ON</button>
+<button onclick="turnoff()">TURN OFF</button>
+
+
+<script>
+function turnon(){
+    document.getElementById('fan').src = 'fan.gif';
+
+}
+
+function turnoff(){
+    document.getElementById('fan').src = 'fan.png';
+
+}
+
+function bulbon(){
+    document.getElementById('lightbulb').src = 'lightbulb on.png';
+
+}
+
+function bulboff(){
+    document.getElementById('lightbulb').src = 'lightblub off.png';
+
+}
+
+</script>
+
+<br>
+
+
+<img height="200" id="lightbulb" src="lightblub off.png" alt=""><br>
+
+<button onclick="bulbon()">TURN ON</button>
+<button onclick="bulboff()">TURN OFF</button>
+
+
+
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
+
+
+

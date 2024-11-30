@@ -8,7 +8,7 @@
      <title>Asad</title>
 
      <link rel="stylesheet" href="asad_style.css">
-
+     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
 
 
@@ -24,27 +24,38 @@
       <img src="asad logo.png" alt="Logo" />
     </div>
     <ul class="navbar-links">
-      <li><a href="#home">Home</a></li>
+      <li><a href="JS_Application.html">JS Application</a></li>
       <li><a href="#about">About</a></li>
       <li><a href="#services">Services</a></li>
     </ul>
   </nav>
 
-<div style="display: flex; justify-content: space-between;">
-    
-    <div style="padding: 10%; " >
-
-        <img height="50" src="https://images.squarespace-cdn.com/content/v1/5b72117a55b02c64155d6f34/1561862767947-KLJPUKFB6LU5HGO5B0V9/Hello2.gif">
+  <section class="container mx-auto px-4 py-12 md:flex md:items-center">
+    <!-- Image on the left -->
+    <div class="md:w-1/2">
+      <img id="heroImage" src="https://images.squarespace-cdn.com/content/v1/5b72117a55b02c64155d6f34/1561862767947-KLJPUKFB6LU5HGO5B0V9/Hello2.gif" alt="Hero GIF" class="w-full h-auto rounded-lg shadow-lg">
     </div>
-    <!-- s9. heading from h1 to h6 -->
-     <div style="text-align: left; ">
-        <h1 style="text-align: center;padding-top: 10%; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">hello my name is asad and this website is for you </h1>
+
+    <!-- Text on the right -->
+    <div class="mt-8 md:mt-0 md:ml-10 md:w-1/2 text-center md:text-left">
+      <h1 class="text-4xl font-bold text-gray-800">Welcome to Our Service</h1>
+      <p class="mt-4 text-gray-600 text-lg">
+        Discover how we can help you achieve your goals with our innovative and tailored solutions. Join us and unlock your full potential!
+      </p>
+      <button class="mt-6 px-6 py-3 bg-blue-500 text-white rounded-lg shadow-md hover:bg-blue-600 transition duration-300">
+        Get Started
+      </button>
     </div>
-</div>
+  </section>
+
+  <script>
+    // Replace the GIF with a static image after 3 seconds
+    setTimeout(() => {
+      document.getElementById("heroImage").src = "HELLO.png";
+    }, 3000); // 3000 milliseconds = 3 seconds
+  </script>
 
 
-<h6 style="background-color: pink;">My name is Asad</h6>h
-<h1 style="font-size: 66;">apple</h1>
 
 <!-- s11 -->
 <a  href="https://www.facebook.com/">Open Facebook</a><br>
