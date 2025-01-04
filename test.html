@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+
+<link rel="icon" type="image/png" href="airplane.webp" sizes="20x40">
+<style>
+
+
+.slide-in {
+    animation: slideIn 3s ease-in-out;
+}
+@keyframes slideIn {
+    0% { transform: translateY(200px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+}
+
+
+
+.slide-right {  
+    animation: asad2 3s ease-in-out;
+}
+@keyframes asad2 {
+    0% { transform: translate(300px,300px); opacity: 0; }
+    100% { transform: translate(0,0); opacity: 1; }
+}
+
+.slide-diagonal {  
+    animation: asad3 3s ease-in-out;
+}
+@keyframes asad3 {
+    0% { transform: translateX(300px); opacity: 0;  }
+    100% { transform: translateX(0px); opacity: 1;   }
+}
+
+
+
+
+
+.rotate-fade {
+    animation: fadeRotate 3s ease-in-out;
+}
+@keyframes fadeRotate {
+    0% { opacity: 0; transform: rotate(90deg); }
+    100% { opacity: 1; transform: rotate(0); }
+}
+
+
+
+#movingElement {
+    background-color: blue;
+    position: absolute;
+    top: 100px;
+    animation: bounce 10s linear infinite alternate;
+}
+
+@keyframes move {
+    0% {
+        transform: translate(0,0);
+        opacity: 0.2;
+    }
+    50% {
+        transform: translateY(10,10);
+        opacity: 0.5;
+    }
+    100% {
+        transform: translate(calc(100vw - 50px),calc(100vw - 50px));
+        opacity: 1;
+    }
+}
+
+
+
+
+@keyframes bounce {
+    0% {
+        transform: translate(0, 0);
+    }
+    25% {
+        transform: translate(calc(100vw - 100px), 0);
+    }
+    50% {
+        transform: translate(calc(100vw - 100px), calc(100vh - 50px));
+    }
+    75% {
+        transform: translate(0, calc(100vh - 50px));
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+
+
+
+
+
+</style>
+
+</head>
+
+
+
+<body>
+
+
+
+
+<h1 class="slide-in">Hello, my name is Asad</h1>
+<h1 class="slide-right">Asad something</h1>
+<h1 class="slide-diagonal">Asad again</h1>
+<h1 class="rotate-fade">Asad finally</h1>
+<h1 style="position: absolute;" id="movingElement2">DVD</h1>
+
+
+
+<script>
+
+const movingElement = document.getElementById("movingElement2"); //  properties store to movingElement variable
+let x = 100, y = 100, dx = 2, dy = 2; // set position x y an d step size dx dy
+
+function animate() {
+    const { innerWidth: w, innerHeight: h } = window; // maximum height and width of window
+    const elemWidth = movingElement.offsetWidth, elemHeight = movingElement.offsetHeight;
+
+    if (x + elemWidth >= w || x <= 0) 
+        {
+        dx *= -1 
+        movingElement.style.color = ['red', 'green', 'blue','orange'][Math.floor(Math.random() * 3)];
+
+    
+    } // if osition x bigger than size of screen reverse
+    if (y + elemHeight >= h || y <= 0) 
+    {dy *= -1; // if position y bigger than size of sreen reverse
+        movingElement.style.color = ['red', 'green', 'blue'][Math.floor(Math.random() * 3)];
+    }
+
+    x += dx; // update position with next step
+    y += dy;  // update y position with next step
+
+    movingElement.style.left = `${x}px`; 
+    movingElement.style.top = `${y}px`;
+
+    requestAnimationFrame(animate);
+}
+
+animate();
+
+
+
+
+</script>
+
+
+
+
+</body>
+
+</html>
