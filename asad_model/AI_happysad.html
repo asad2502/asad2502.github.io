@@ -1,20 +1,8 @@
-<!DOCTYPE html>
-
-
-
-<html>
-
-
-
-
 <head></head>
 
 
-
 <body>
-
-
-
+    
     <div>Teachable Machine Image Model</div>
     <button type="button" onclick="init()">Start</button>
     <div id="webcam-container"></div>
@@ -26,7 +14,7 @@
         // https://github.com/googlecreativelab/teachablemachine-community/tree/master/libraries/image
     
         // the link to your model provided by Teachable Machine export panel
-        const URL = "asad_model/";
+        const URL = "./new_model/";
     
         let model, webcam, labelContainer, maxPredictions;
     
@@ -71,10 +59,7 @@
                 const classPrediction =
                     prediction[i].className + ": " + prediction[i].probability.toFixed(2);
                 labelContainer.childNodes[i].innerHTML = classPrediction;
-
-                if (prediction[i].className.toLowerCase() === "happy" && prediction[i].probability > 0.95) document.body.style.backgroundColor = "red";
-                if (prediction[i].className.toLowerCase() === "sad" && prediction[i].probability > 0.50) document.body.style.backgroundColor = "blue";
-                }
+            }
         }
     </script>
     
@@ -82,41 +67,4 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </body>
-
-
-
-
-
-
-
-</html>
